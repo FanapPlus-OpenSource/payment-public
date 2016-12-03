@@ -8,8 +8,11 @@ To use **PIQO Android SDK** you can download the `.aar` file from *Bin* folder. 
 ##How can I use PIQO Android SDK?(More Thorough Tutorial)
 First, you need to have an existing android application.
 You can add this line to your dependencies in build file:
+
 `compile 'ir.appson:PIQOlibrary:1.0.2’`
+
 Or
+
 Download `.aar` from *Bin* folder above. Now add the downloaded `.aar` file to your project. Steps in *Android Studio*:
 
  1. Copy `.aar` file to ***libs*** folder.
