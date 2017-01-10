@@ -1,18 +1,19 @@
-# PIQO Unity SDK
-Public specifications, samples and documentation on **PIQO Unity SDK**.
+# PIQO Unity Plugin
+Public specifications, samples and documentation on **PIQO Unity Plugin**.
+- **PIQO** Unity Plugin works on Unity version 5+.
 
 
-##How can I use PIQO Unity SDK?(Quick Tutorial)
-To use **PIQO Unity SDK** you can download the `.aar` file from *Bin* folder. Refer to the *sample* folder for usage.
+##How can I use PIQO Unity Plugin?(Quick Tutorial)
+To use **PIQO Unity Plugin** you can download the `.aar` file from *Bin* folder. Refer to the *sample* folder for usage.
 
-##How can I use PIQO Unity SDK?(More Thorough Tutorial)
+##How can I use PIQO Unity Plugin?(More Thorough Tutorial)
 First, you need to have an existing Unity application.
-You can add this line to your dependencies in build file:
 
+- If you don't have any Android manifest file in your project yet, you can find a sample of that in ***Assets/Plugins/Android/*** in ***Sample*** folder above, and copy that to ***Assets/Plugins/Android/*** folder of your project. 
 
-Download `.aar` from *Bin* folder above. Now add the downloaded `.aar` file to your project:
-
- 1. add the downloaded `.aar` file to your project through ***Assets->Import Package->Custom Package***
+ 1. Download **PIQO** Unity plugin from *Bin* folder and add it to your project through ***Assets->Import Package->Custom Package***.
+ 
+ 2. Import downloaded plugin to ***Assets/Plugins/Android*** folder in your project.
  
  2. Add Your app Id into `AndroidManifest.xml`.
  ```xml
@@ -76,7 +77,6 @@ Download `.aar` from *Bin* folder above. Now add the downloaded `.aar` file to y
  5. In case your app does not already ask for Internet permission you should add the following line to the `AndroidManifest.xml` file under application tag:
  ```xml
  <uses-permission android:name="android.permission.INTERNET" />
- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/><!-- Optional --> 
  ```
  
 
