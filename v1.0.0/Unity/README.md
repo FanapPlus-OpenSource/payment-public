@@ -3,24 +3,19 @@ Public specifications, samples and documentation on **PIQO Unity Plugin**.
 - **PIQO** Unity Plugin works on Unity version 5+.
 
 
-##How can I use PIQO Unity Plugin?(Quick Tutorial)
-To use **PIQO Unity Plugin** you can download the `.aar` file from *Bin* folder. Refer to the *sample* folder for usage.
-
-##How can I use PIQO Unity Plugin?(More Thorough Tutorial)
+##How can I use PIQO Unity Plugin?
 First, you need to have an existing Unity application.
 
  1. If you don't have any Android manifest file in your project yet, you can find a sample of that in ***Assets/Plugins/Android/*** in ***Sample*** folder above, and copy that to ***Assets/Plugins/Android/*** folder of your project. 
 
- 2. Download **PIQO** Unity plugin from *Bin* folder and add it to your project through ***Assets->Import Package->Custom Package***.
+ 2. Download **PIQO** Unity plugin from *Bin* folder and add it to your project through ***Assets->Import Package->Custom Package***. Then Import downloaded plugin to ***Assets/Plugins/Android*** folder in your project.
  
- 3. Import downloaded plugin to ***Assets/Plugins/Android*** folder in your project.
- 
- 4. Add Your app Id into `AndroidManifest.xml`.
+ 3. Add Your app Id into `AndroidManifest.xml`.
  ```xml
  <meta-data android:name="Appson-Identity-App-Id" android:value="YOUR_APP_ID" />
  ```
  
- 5. Link purchase buttons to purchase function (like sample in `PIQOPlugin.cs`).
+ 4. Link purchase buttons to purchase function (like sample in `PIQOPlugin.cs`).
  ```C#
  void Start() {
 		Debug.Log ("start");
@@ -72,9 +67,9 @@ First, you need to have an existing Unity application.
  ```
  Replace `productCode`, `productItemCode` and `privateKey` with your product info which defined in the [PIQO developer panel][1].
  
- 6. Check your application bundle id.
+ 5. Check your application bundle id.
  
- 7. In case your app does not already ask for Internet permission you should add the following line to the `AndroidManifest.xml` file under application tag:
+ 6. In case your app does not already ask for Internet permission you should add the following line to the `AndroidManifest.xml` file under application tag:
  ```xml
  <uses-permission android:name="android.permission.INTERNET" />
  ```
