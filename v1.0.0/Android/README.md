@@ -11,20 +11,20 @@ You can add this line to your dependencies in build file:
 
 `compile 'ir.appson:PIQOlibrary:1.0.5'`
 
-Or
-
-Download `.aar` from *Bin* folder above. Now add the downloaded `.aar` file to your project. Steps in *Android Studio*:
-
- 1. Copy `.aar` file to ***libs*** folder.
- 2. Choose ***New Module*** option under ***File->New*** menu.
- 3. Import copied `.aar` file.
- 4. Go to ***File->Project Settings***.
- 5. Under ***Modules*** in left menu, select ***app***.
- 6. Go to ***Dependencies*** tab.
- 7. Click the ***+*** button in the upper right corner.
- 8. Select ***Module Dependency***.
- 9. Select the new module from the list.
- 
+# Or
+#
+# Download `.aar` from *Bin* folder above. Now add the downloaded `.aar` file to your project. Steps in *Android Studio*:
+#
+# 1. Copy `.aar` file to ***libs*** folder.
+# 2. Choose ***New Module*** option under ***File->New*** menu.
+# 3. Import copied `.aar` file.
+# 4. Go to ***File->Project Settings***.
+# 5. Under ***Modules*** in left menu, select ***app***.
+# 6. Go to ***Dependencies*** tab.
+# 7. Click the ***+*** button in the upper right corner.
+# 8. Select ***Module Dependency***.
+# 9. Select the new module from the list.
+# 
 
 Now you have to add your *AppId* to `AndroidManifest.xml` file inside `<application/>` tag:
 ```xml
