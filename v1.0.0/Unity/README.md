@@ -3,7 +3,7 @@ Public specifications, samples and documentation on **PIQO Unity Plugin**.
 - **PIQO** Unity Plugin works on Unity version 5+.
 
 
-##How can I use PIQO Unity Plugin?
+## How can I use PIQO Unity Plugin?
 First, you need to have an existing Unity application.
 
  1. If you don't have any Android manifest file in your project yet, you can find a sample of that in ***Assets/Plugins/Android/*** in ***Sample*** folder above, and copy that to ***Assets/Plugins/Android/*** folder of your project. 
