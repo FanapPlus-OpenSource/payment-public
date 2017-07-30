@@ -3,7 +3,7 @@ PIQO Android SDK
 Public specifications, samples and documentation on PIQO Android SDK.
 Import the “piqo.aar ” file in your project as a library
 or add the following line in your app level gradle file dependecies:
-compile 'ir.appson:PIQOlibrary:+'
+compile(group: 'ir.appson', name: 'PIQOlibrary', version: '1.1.0', ext: 'aar', classifier: '')
 
 
 
