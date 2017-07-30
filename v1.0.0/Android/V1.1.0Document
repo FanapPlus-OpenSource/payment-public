@@ -1,0 +1,116 @@
+
+PIQO Android SDK
+Public specifications, samples and documentation on PIQO Android SDK.
+Import the “piqo.aar ” file in your project as a library
+or add the following line in your app level gradle file dependecies:
+compile 'ir.appson:PIQOlibrary:+'
+
+
+
+How to init the library?
+
+you have to add your AppId to AndroidManifest.xml file inside <application/> tag:
+
+<manifest>
+<application>
+...
+<meta-data android:name="Appson-Identity-App-Id" android:value="YOUR_APP_ID" />
+</application>
+...
+</manifest>
+
+In your shopping Activity:
+
+Appson.init(MainActivity.this);
+MakePurchaseListener makePurchaseListener = new MakePurchaseListener() {
+                    @Override
+                    public void onSuccessRequest(String string) {
+                        //todo: purchase is successful
+                        Toast.makeText(MainActivity.this, "عملیات موفق" + " " + string, Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onFailedRequest(String exception) {
+                        //todo: purchase has failed with reason exception
+                        Toast.makeText(MainActivity.this, exception, Toast.LENGTH_LONG).show();
+                    }
+
+                    @Override
+                    public void onUserCancelled() {
+                        Toast.makeText(MainActivity.this, "User Canceled", Toast.LENGTH_LONG).show();
+                    }
+                };
+Payment.makePurchase(makePurchaseListener,
+                        Identity.PHONE_LOGIN,
+                        correctPrivateKey,
+                        correctProductCode,
+                        correctProductItemId,
+                        correctProductItemCode);
+
+
+
+
+
+
+How to verify a purchase?
+A: verify a purchase by user phone number
+
+Verification.checkSubscriptionByPhone(
+                        YourProductItemCode,
+                        YourProductCode,
+                        YourProductId,
+                        UserPhoneNumber,
+                        YourPrivateKey,
+                        verificationListener);
+
+VerificationListener verificationListener = new VerificationListener() {
+                    @Override
+                    public VerificationResponse onSuccessRequest(String response) {
+                        //todo: verify is successful
+                        Toast.makeText(MainActivity.this, "عملیات موفق" + " " + response, Toast.LENGTH_LONG).show();                    }
+
+                    @Override
+                    public VerificationResponse onFailedRequest(String exception) {
+                       //todo: revoke has failed with reason exception
+		Toast.makeText(MainActivity.this, exception, Toast.LENGTH_LONG).show();
+                    }
+                };
+
+B: verify a purchase by user account ID
+Verification.checkSubscriptionByAccountId(
+                        YourProductItemCode,
+                        YourProductCode,
+                        YourProductId,
+                        UserAcountID,
+                        YourPrivateKey,
+                        verificationListener
+                );
+
+
+
+
+
+How to revoke a purchase?
+Revoke.revokeUser(
+                        YourProductItemCode,
+                        YourProductCode,
+                        theSuccessCode,
+                        SubscriberPhoneNumber,
+                        YourPrivateKey,
+                        revokeListener
+                );
+RevokeListener revokeListener = new RevokeListener() {
+                    @Override
+                    public void onSuccess() {
+		//todo: revoke is successful
+		Toast.makeText(MainActivity.this, "عملیات موفق" + " " + token, Toast.LENGTH_LONG).show();
+
+                    }
+
+                    @Override
+                    public void onFailed(String exceptionCode) {
+		//todo: revoke has failed with reason exceptionCode
+		Toast.makeText(MainActivity.this, exceptionCode, Toast.LENGTH_LONG).show();
+
+                    }
+                };
