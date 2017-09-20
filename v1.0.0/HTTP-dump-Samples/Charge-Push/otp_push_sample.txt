@@ -1,0 +1,29 @@
+Request:
+Method: POST, RequestUri: 'https://pg.appson.ir/api/otp/push'
+Headers:
+{
+  RUID: 5bdee9a6b5944941bd50bdfa1cecafeb
+  PRODUCT: PRD-TEST-1
+  REQUESTDATE: 20170916083620
+  SIGNATURE: aQJQt30KC/Y3phq96jP81Y0CPEOSAxb9yDdbVtNJxqXjWrCPuEDf+iSjWb+JLXiIt6Y+dFznagwiKiIs+tfdKNBbJC1+AbglG6xeEZCdLMlgCxGoVyrijMeb/NTIISezZ0BV8uBfYMbB5HW/ITViop7Mf9fH08bT015Dr8iq82jyKyr2UxRgf3jlTVSJ5PRJF+5/7zJpBUoaEbBKnsywmIwQeuEGI9IDsP+ulhYsTcJq8VEWYO9MeiJDR6A7pGDnb/E6iTiFLtHQMimS9tX238moSruvTWsKgB7hbEPGBrInS/BTQWortc6FaAlHmOS/ZfSPCA3gdGDDnz/itJeOaw==
+  Content-Type: application/json; charset=utf-8
+}
+{"PhoneNumber":"9124894773","ProductItemCode":"PRD-AIO-1-c9505c14-d962-4a80-a9e2-42e91c6a3c2d","ReferenceCode":"0bcdb96214b9485d8a2a6fe558a652f9","Date":"20170916083620","ProductCode":"PRD-AIO-1","RUID":"5bdee9a6b5944941bd50bdfa1cecafeb"}
+
+
+Response:
+StatusCode: 200, ReasonPhrase: 'OK'
+Headers:
+{
+  Pragma: no-cache
+  Cache-Control: no-store, must-revalidate, no-cache
+  Date: Sat, 16 Sep 2017 08:36:20 GMT
+  Server: Microsoft-IIS/8.5
+  X-AspNet-Version: 4.0.30319
+  X-Powered-By: ASP.NET
+  Content-Length: 146
+  Content-Type: application/json; charset=utf-8
+  Expires: 0
+}
+{"IsSuccess":true,"Response":{"ReferenceCode":"0bcdb96214b9485d8a2a6fe558a652f9","TransactionId":"aea91920abaa46a2beb2bcd4d9261390"},"Error":null}
+
