@@ -1,0 +1,33 @@
+Request:
+Method: POST, RequestUri: 'https://pg-stage.appson.ir/api/purchase/verification/commit', Version: 1.1, Content: System.Net.Http.ObjectContent`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], Headers:
+{
+  RUID: a0480068e28d4cc9a90d5e5e5a46ec0b
+  PRODUCT: PRD-Book
+  REQUESTDATE: 20170920095659
+  SIGNATURE: 7LuWebqGTG7rYTfIQMXHM2X5ysBr/Wi8I3EY3+ANcQWA6C7vlCDu6BcQOc1giBvy2W4WPrnCmlsT6HDMBOZkcrsNQUOSlmSQBUl81CfYVkVAEZM4HVut9d6H1J/+07ZB4vdLE+hSoToYUF4tQhwU7+uqbbIrWzCrGWFmgJPT+cCAiUX2KTIAGmb9z7CJznjQr77Y1yGaEVbqvPV00F/qwshYmHPged8ywF65BXQKMna760hrAt3R3lKOFdQRSUuJDls2K5Yym9SOtqmZnf2NjhDA8V9HYM88lTd+BZxrNjxArzk47qsr5p22eO/6pwoLwES6esowI4GwuEakZuqRIA==
+  Content-Type: application/json; charset=utf-8
+}
+{"Date":"20170920095659","ProductCode":"PRD-Book","RUID":"a0480068e28d4cc9a90d5e5e5a46ec0b","PhoneNumber":"9192162865","ProductItemCode":"PRD-Book-171d6e02-f88f-498d-b86b-6976cdde5aed","ReferenceCode":"c29b4c0ef41a419a9d3e5dc1cf5c634e","Token":"4540"}
+
+
+Response:
+StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Connection: keep-alive
+  Keep-Alive: timeout=65
+  Pragma: no-cache
+  Date: Wed, 20 Sep 2017 09:57:02 GMT
+  Server: ArvanCloud
+  X-AspNet-Version: 4.0.30319
+  X-Powered-By: ASP.NET
+  X-Powered-By: ARR/3.0
+  AR-PoweredBy: Arvan Cloud (arvancloud.com)
+  AR-SID: 2061-441
+  AR-ATIME: 0.861
+  AR-CACHE: MISS
+  Cache-Control: max-age=3d
+  Content-Length: 47
+  Content-Type: application/json; charset=utf-8
+}
+{"IsSuccess":true,"Response":null,"Error":null}
+
