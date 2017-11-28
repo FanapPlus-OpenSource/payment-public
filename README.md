@@ -6,7 +6,7 @@ Public specifications, samples and documentation on PIQO(Appson's payment servic
 > - This repository only hosts the documents for the latest edition.
 > - Current live version is v1.0.0
 
-If you'd like to use this product in your applications, register on [**PIQO website**][1] and contact sina [a t s i g n ] appson [d o t ] ir
+If you'd like to use this product in your applications, register on [**PIQO website**][1] and contact saeed.gh [a t s i g n ] appson [d o t ] ir
 
 ## Table of Contents
 
